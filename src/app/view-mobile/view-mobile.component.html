@@ -1,0 +1,32 @@
+<section>
+    @for (item of mobileList; track $index) {
+        <div class="card">
+            <div class="brand">
+                <strong>Brand:{{item.brand}}</strong>
+            </div>
+            <div class="model">
+                <strong>Model:</strong>
+                {{item.model}}
+            </div>
+            <div class="pirce">
+               <p>
+                Price: {{item.price}}
+               </p>
+            </div>
+            <div class="color">
+                <p>Color: {{item.color}}</p>
+            </div>
+            <div class="storage">
+                <p>Storage: {{item.storage}}</p>
+            </div>
+            <div class="description">
+                <p>
+                    Description: {{item.description}}
+                </p>
+            </div>
+        </div>
+    }
+   
+    
+
+</section>

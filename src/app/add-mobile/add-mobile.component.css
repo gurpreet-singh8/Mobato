@@ -1,0 +1,35 @@
+.addForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(226, 225, 225);
+    padding: 20px;
+    min-width: 350px;
+    box-shadow: 0 0 6px gray;
+    border-radius: 3px;
+}
+
+.addForm>div{
+    display: flex;
+    flex-direction: column;
+}
+input,textarea{
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid rgb(191, 190, 190);
+}
+
+.submitbtn{
+    padding: 10px 30px;
+    background-color: rgb(16, 104, 211);
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.success{
+    color: green;
+}
+.errorMessage{
+    color: red;
+}

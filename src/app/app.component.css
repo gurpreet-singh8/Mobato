@@ -1,0 +1,22 @@
+nav{
+    background-color: rgb(30, 30, 30);
+    padding: 20px;
+}
+ul{
+    display: flex;
+    gap: 20px;
+}
+
+li{
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

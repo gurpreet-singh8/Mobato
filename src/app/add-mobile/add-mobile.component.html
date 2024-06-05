@@ -1,0 +1,44 @@
+<form class="addForm"  [formGroup]="myForm" (submit)="onSubmit()">
+    <div class="brand">
+        <label for="brand">Brand:</label>
+        <input formControlName="brand" type="text" name="brand" id="brand">
+        <p class="errorMessage">{{errorMessageList.brand}}</p>
+    </div>
+    <div class="model">
+        <label for="model">Model:</label>
+        <input formControlName="model" type="text" name="model" id="model">
+        <p class="errorMessage">{{errorMessageList.model}}</p>
+
+    </div>
+    <div class="price">
+        <label for="price">Price:</label>
+        <input formControlName="price" type="number" name="price" id="price">
+        <p class="errorMessage">{{errorMessageList.price}}</p>
+
+    </div>
+    <div class="color">
+        <label for="color">Color:</label>
+        <input formControlName="color" type="text" name="color" id="color">
+        <p class="errorMessage">{{errorMessageList.color}}</p>
+
+    </div>
+    <div class="storage">
+        <label for="storage">Storage:</label>
+        <input formControlName="storage" type="number" name="storage" id="storage">
+        <p class="errorMessage">{{errorMessageList.storage}}</p>
+
+    </div>
+    <div class="description">
+        <label for="description">Description:</label>
+        <textarea formControlName="description" name="description" id="description" cols="30" rows="3"></textarea>
+        <p class="errorMessage">{{errorMessageList.description}}</p>
+
+    </div>
+    <button type="submit" class="submitbtn">Submit</button>
+    <p>
+        <strong class="success">
+            {{respones.message}}
+        </strong>
+
+    </p>
+</form>
